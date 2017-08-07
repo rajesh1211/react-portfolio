@@ -8,8 +8,8 @@ class NavigationBar extends React.Component {
       <div id="mySidenav" className="sidenav">
         <Link to="/"> About Me </Link>
         <Link to="skills"> Skills </Link>
-        <a href="#">Projects</a>
-        <a href="#">Contact Me</a>
+        <Link to="projects"> projects </Link>
+        <Link to="contact"> Contact Me </Link>
       </div>
     );  
   }
