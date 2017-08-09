@@ -1,0 +1,61 @@
+.sidenav {
+  background: #303E4D;
+  height: 100vh;
+  width: 15%;
+  position: fixed;
+  left: 0;
+
+  .profile-container{
+    margin: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.23);
+    padding-bottom: 15px;
+
+    .profile-pic-container , .profile-name {
+      display: inline-block;
+    }
+
+    .profile-pic-container {
+      width: 35%
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .profile-name {
+      color: white;
+    }
+  }
+
+  .icon-about {
+    color: white;
+    font-size: 16px;
+  }
+
+  .sidenav-list{
+    list-style: none;
+    padding: 0;
+
+    .sidenav-list-item {
+      color: rgb(195, 195, 195);
+      padding: 10px;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+
+      &:active, &:hover{
+       color: white; 
+       background: rgb(32, 49, 68)
+      }
+    }
+  }
+}
+
+.nav-icon{
+  margin-right: 10px;
+}
+
+
+

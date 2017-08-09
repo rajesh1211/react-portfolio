@@ -1,16 +1,42 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
+import ProfileBar from './profile_bar'
 
 
+require('../styles/navigation.scss');
 class NavigationBar extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.navigate = this.navigate.bind(this)
+  }
+
+  navigate(e) {
+    browserHistory.push(e.target.getAttribute("data"))
+  }
   render() {
     return(
-      <div id="mySidenav" className="sidenav">
-        <Link to="/"> About Me </Link>
-        <Link to="skills"> Skills </Link>
-        <Link to="projects"> projects </Link>
-        <Link to="contact"> Contact Me </Link>
-      </div>
+      <nav id="mySidenav" className="sidenav">
+        <ProfileBar/>
+        <div className="sidenav-list">
+          <a className="sidenav-list-item" data="/" onClick={this.navigate}>
+            <span className="nav-icon icon-about glyphicon glyphicon-user"></span>
+            About me
+          </a>
+          <a className="sidenav-list-item" data="/skills" onClick={this.navigate}>
+            <span className="nav-icon icon-about glyphicon glyphicon-tasks"></span>
+            Skills
+          </a>
+          <a className="sidenav-list-item" data="/projects" onClick={this.navigate}>
+            <span className="nav-icon icon-about glyphicon glyphicon-folder-open"></span>
+            Projects
+          </a>
+          <a className="sidenav-list-item" data="/contact" onClick={this.navigate}>
+            <span className="nav-icon icon-about glyphicon glyphicon-send"></span>
+            Contact me
+          </a>
+        </div>
+      </nav>
     );  
   }
 }
