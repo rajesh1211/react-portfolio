@@ -1,18 +1,65 @@
-.about-pic{
-  width: 100%;
+.sub-container {
+  padding: 15px;
+
+  .about-images{
+    width: 180px;
+    position: absolute;
+  }
+
+  .about-container{
+    position: relative;
+    .img-mac{
+      left: 50px;
+      top:100px;
+      -ms-transform: rotate(7deg); /* IE 9 */
+      -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+      transform: rotate(-40deg);
+    }
+
+    .img-stark {
+      left: 350px;
+      top: 5px;
+    }
+
+    .img-darth{
+      right: 40px;
+      top:80px;
+      -ms-transform: rotate(7deg); /* IE 9 */
+      -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+      transform: rotate(20deg);
+    }
+
+    .img-mobile{
+      right: 40px;
+      top: 450px;
+    }
+
+    .img-console{
+      left: 100px;
+      top: 500px;
+      -ms-transform: rotate(7deg); /* IE 9 */
+      -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+      transform: rotate(-20deg);
+    }
+  }
+
+  .intro { 
+    position: absolute;
+    top: 290px;
+    left: 20%;
+
+    p.salutation {
+      font-size: 60px;
+      color: white;
+      font-family: monospace;
+    }
+
+    p.house-name {
+      text-align: right;
+      font-size: 24px;
+      font-family: monospace;
+      color: white;
+    }
+  }
 }
 
-.about-me {
-  p {
-    font-size: 18px;
-    line-height: 1.8;
-    font-family: cursive;
-  }
-  
-  p.heading {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 200px;
-    font-style: italic;
-  }
-}
