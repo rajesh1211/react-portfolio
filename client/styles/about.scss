@@ -1,12 +1,14 @@
-.sub-container {
+.about-container {
   padding: 15px;
+  background: #FFC107;
+  height: 100vh;
 
   .about-images{
     width: 180px;
     position: absolute;
   }
 
-  .about-container{
+  .about-inner-container{
     position: relative;
     .img-mac{
       left: 50px;
@@ -41,25 +43,67 @@
       -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
       transform: rotate(-20deg);
     }
-  }
 
-  .intro { 
-    position: absolute;
-    top: 290px;
-    left: 20%;
+    .intro { 
+      position: absolute;
+      top: 290px;
+      left: 20%;
+      width: 75%;
 
-    p.salutation {
-      font-size: 60px;
-      color: white;
-      font-family: monospace;
+      p.salutation {
+        font-size: 60px;
+        color: white;
+        font-family: monospace;
+      }
+
+      p.house-name {
+        text-align: right;
+        font-size: 24px;
+        font-family: monospace;
+        color: white;
+        padding-right: 170px;
+        margin-bottom: 100px;      
+      }
+
+      p.description {
+        text-align: right;
+        font-size: 16px;
+        color: white;
+        font-family: monospace;
+      }
     }
-
-    p.house-name {
-      text-align: right;
-      font-size: 24px;
-      font-family: monospace;
-      color: white;
-    }
   }
+}
+
+
+/* GLOBAL STYLES */
+body {
+  justify-content: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
 }
 

@@ -13,12 +13,14 @@ require('../styles/about.scss');
 class About extends React.Component {
   render() {
     return(
-      <div className="sub-container">
+      <div className="about-container">
         <div className="row"> 
-          <div className="col-md-12 about-container">
+          <div className="col-md-12 about-inner-container">
             <div className="intro">
-              <p className="salutation"> Hi!! , I am Rajesh </p>
+              <p className="typewriter salutation"> Hi!! , I am Rajesh </p>
               <p className="house-name">  ... from house Stark! </p>
+              <p className="description"> A Full Stack Developer by heart,  </p>
+              <p className="description"> which by the way is made of Valerian Steel. </p>
             </div>  
             <img src={mac} className='img-mac about-images'/>
             <img src={darth} className='img-darth about-images'/>
