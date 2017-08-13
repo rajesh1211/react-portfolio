@@ -19,7 +19,8 @@ module.exports = {
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new ExtractTextPlugin("style.css"),
   ],
   module: {
     loaders: [
@@ -29,8 +30,15 @@ module.exports = {
         loaders: ['react-hot-loader', 'babel-loader']
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.(scss)$/,
         loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+      },
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -63,6 +71,14 @@ module.exports = {
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
+  // module.exports.module.rules = (module.exports.module.rules || []).concat([{
+  //   test: /\.css$/,
+  //   use: ExtractTextPlugin.extract({
+  //     fallback: "style-loader",
+  //     use: "css-loader"
+  //   })
+  // }])         
+
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {

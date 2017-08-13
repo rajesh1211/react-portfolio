@@ -2,9 +2,7 @@ import React from 'react';
 import rajesh_raikwar from '../images/rajesh_raikwar.jpg'
 import mac from '../images/mac.png'
 import darth from '../images/darth.png'
-import storm_trooper from '../images/stormtrooper2.png'
 import console from '../images/console.png'
-import mobile from '../images/mobile1.png'
 import stark from '../images/stark.png'
 
 require('../styles/contact.scss');

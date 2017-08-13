@@ -4,9 +4,7 @@ import { connect } from 'react-redux'
 import colab from '../images/colab.png'
 import sts from '../images/sts.png'
 import rubygem from '../images/rubygem.png'
-import me1 from '../images/me1.jpg'
 import darth from '../images/darth.png'
-import stormtrooper from '../images/stormtrooper.png'
 
 import * as d3 from "d3";
 import * as c3 from "c3";
