@@ -6,7 +6,6 @@ import Skills from './containers/Skills'
 import Contact from './containers/Contact'
 import Projects from './containers/Projects'
 
-
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={About}/>
