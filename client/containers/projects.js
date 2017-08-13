@@ -1,19 +1,32 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
+require('../styles/projects.scss');
+
 class Projects extends React.Component {
+
   renderList() {
     return this.props.projects.map((project, index) => {
       return (
-        <h2 key={index}>{project}</h2>    
+        <li className="card" key={project.id}>
+          <span className="glyphicon glyphicon-pushpin icon-pin"></span>
+          <div>  
+            <p> Name: {project.name} </p>
+            <p> Role: {project.role} </p>
+            <p> Techs: {project.techs} </p>
+            <p> Description: {project.description}</p>
+          </div>
+        </li>
       )
     })
   }
 
   render() {
     return(
-      <div>
-        {this.renderList()}
+      <div className="projects-container">
+        <ul className="projects-cards" >
+          {this.renderList()}
+        </ul>
       </div>
     );  
   }

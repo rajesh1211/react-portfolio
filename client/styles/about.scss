@@ -45,43 +45,45 @@
     }
 
     .intro { 
+      width: 920px;
       position: absolute;
-      top: 290px;
-      left: 20%;
-      width: 75%;
+      right: 0;
+      margin-top: 270px;
 
+      text-align: right;
+      
+      padding-right: 120px;
+      font-family: monospace;
+      color: white;
       p.salutation {
         font-size: 60px;
-        color: white;
-        font-family: monospace;
       }
 
       p.house-name {
-        text-align: right;
         font-size: 24px;
-        font-family: monospace;
-        color: white;
-        padding-right: 170px;
         margin-bottom: 100px;      
       }
 
+      
+    }
+
+    .sub-intro {
+      text-align: right;
       p.description {
-        text-align: right;
         font-size: 16px;
         color: white;
         font-family: monospace;
       }
-    }
+    }   
   }
 }
 
 
 /* GLOBAL STYLES */
 body {
-  justify-content: center;
+  
 }
 
-/* DEMO-SPECIFIC STYLES */
 .typewriter {
   color: #fff;
   font-family: monospace;

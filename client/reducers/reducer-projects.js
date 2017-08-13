@@ -1,7 +1,60 @@
 export default function () {
   return [
-    "Killing Joker",
-    "Messing with Superman",
-    "Harley Quinn"
+    {
+      id: 1,  
+      name: 'Pipecast Colab',
+      role: 'Fullstack',
+      techs: "ROR, angular",
+      description: 'Colab is the collaboration platform for creative people.'
+    },
+    {
+      id: 2,  
+      name: 'Pipecast Stream',
+      role: 'Fullstack',
+      techs: "ROR, angular",
+      description: 'Colab is the collaboration platform for creative people.'
+    },
+    {
+      id: 3,  
+      name: 'Files deleter for Slack',
+      role: 'Front end',
+      techs: "Javascript",
+      description: 'Helps you delete old slack files.'
+    },
+    {
+      id: 4,  
+      name: 'Trackwealth',
+      role: 'FullStack',
+      techs: "Ruby, Angular, Android",
+      description: 'Helps you track your expenses'
+    },
+    {
+      id: 5,  
+      name: 'Smart Sort',
+      role: 'Backend',
+      techs: "Ruby",
+      description: 'Ruby Gem'
+    },
+    {
+      id: 6,  
+      name: 'Expense Manager',
+      role: 'FullStack',
+      techs: "ROR, React",
+      description: 'Helps you track your expenses'
+    },
+    {
+      id: 7,  
+      name: 'This Website',
+      role: 'FrontEnd',
+      techs: "React, Bootstrap",
+      description: 'Colab is the collaboration platform for creative people.'
+    },
+    {
+      id: 8,  
+      name: 'Simple Meme Generator',
+      role: 'FullStack',
+      techs: "Android",
+      description: 'Helps you track your expenses'
+    }
   ]
 }

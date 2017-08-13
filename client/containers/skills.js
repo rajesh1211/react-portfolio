@@ -8,6 +8,7 @@ import me1 from '../images/me1.jpg'
 import darth from '../images/darth.png'
 import stormtrooper from '../images/stormtrooper.png'
 
+require('../styles/general.scss');
 require('../styles/skills.scss');
 
 class Skills extends React.Component {
@@ -129,10 +130,6 @@ class Skills extends React.Component {
     this.generateBarChart();
   }
 
-  gotToPage(link) { 
-    window.open(link,'_blank');
-  }
-
   render() {
     return(
       <div className="skills-container">
@@ -150,7 +147,7 @@ class Skills extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 card"  onClick={() => this.gotToPage('http://colab.pipecast.in/')}>
+            <a className="col-md-4 card" href="http://colab.pipecast.in/" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
                   <div className="number"> 2276 </div>
@@ -161,8 +158,8 @@ class Skills extends React.Component {
                   <div className="card-description-title"> Pipecast.in </div>
                 </div>
               </div>  
-            </div>  
-            <div className="col-md-4 card" onClick={() => this.gotToPage("https://chrome.google.com/webstore/detail/files-deleter-for-slack/mecaeilcedkdpkfjlijlcodonpbbpaei")}>
+            </a>  
+            <a className="col-md-4 card" href="https://chrome.google.com/webstore/detail/files-deleter-for-slack/mecaeilcedkdpkfjlijlcodonpbbpaei" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
                   <div className="number"> 60 </div>
@@ -173,8 +170,8 @@ class Skills extends React.Component {
                   <div className="card-description-title"> Files Deleter For Slack </div>
                 </div>
               </div>  
-            </div>  
-            <div className="col-md-4 card" onClick={() => this.gotToPage("https://rubygems.org/gems/smart_sort")}>
+            </a>  
+            <a className="col-md-4 card" href="https://rubygems.org/gems/smart_sort" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
                   <div className="number"> 440 </div>
@@ -185,7 +182,7 @@ class Skills extends React.Component {
                   <div className="card-description-title"> Smart Sort </div>
                 </div>  
               </div>  
-            </div>  
+            </a>  
           </div>
           <div className="row charts">
             <div className="col-md-4 card">

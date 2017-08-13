@@ -2,6 +2,7 @@ import {combineReducers} from 'redux';
 import SkillsReducer from './reducer-skills';
 import ProjectsReducer from './reducer-projects';
 import PopupReducer from './reducer-popup';
+import NavigationReducer from './reducer-navigation';
 
 
 
@@ -13,7 +14,8 @@ import PopupReducer from './reducer-popup';
 const allReducers = combineReducers({
   skills: SkillsReducer,
   projects: ProjectsReducer,
-  popup: PopupReducer
+  popup: PopupReducer,
+  navigation: NavigationReducer,
 });
 
 export default allReducers

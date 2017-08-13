@@ -7,8 +7,7 @@ import console from '../images/console.png'
 import mobile from '../images/mobile1.png'
 import stark from '../images/stark.png'
 
-
-require('../styles/about.scss');
+require('../styles/contact.scss');
 
 class About extends React.Component {
   render() {
@@ -16,12 +15,16 @@ class About extends React.Component {
       <div className="about-container">
         <div className="row"> 
           <div className="col-md-12 about-inner-container">
+            
             <div className="intro">
-              <p className="typewriter salutation"> Hi!! , I am Rajesh </p>
-              <p className="house-name">  ... from house Stark! </p>
-              <p className="description"> A Full Stack Developer by heart,  </p>
-              <p className="description"> which by the way is made of Valerian Steel. </p>
-            </div>  
+              <p className="typewriter salutation"> Hi!!, I am Rajesh.</p>
+              <p className="house-name">... from house Stark! &nbsp; </p>
+
+              <div className="sub-intro">
+                <p className="description"> A Full Stack Developer by heart,  </p>
+                <p className="description"> which by the way is made of Valerian Steel. </p>
+              </div>  
+            </div> 
             <img src={mac} className='img-mac about-images'/>
             <img src={darth} className='img-darth about-images'/>
             <img src={console} className='img-console about-images'/>

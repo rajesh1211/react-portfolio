@@ -1,0 +1,71 @@
+.contact-container {
+  padding: 15px;
+  padding-top: 50px;
+  background: url('../images/me2.png');
+  height: 100vh;  
+  background-size: cover;
+
+  .contact-inner {    
+    background: rgba(53, 62, 66, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+
+
+    p {
+      color: #fcfdfd;
+      a {
+        color: #fcfdfd;
+      }
+    }
+
+    .heading {
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-family: cursive;
+    }
+
+    .social-links-container{ 
+      text-align: center;
+      margin: 40px 0;
+      
+
+      .social-link {
+        margin: 0 10px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: white;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .icon {
+        margin: 10px;
+        font-size: 24px;
+      }
+
+      .fa-facebook {
+        color: #3b5998;
+      }
+
+      .fa-linkedin {
+        color: #0077B5;
+      }
+    }  
+
+    form {
+      
+      overflow: hidden;
+      border-radius: 5px;
+      .form-group {
+        color: #fcfdfd;
+
+        .form-control {
+          
+          font-size: 16px;
+        }
+      }
+    }
+  }
+} 

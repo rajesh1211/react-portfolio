@@ -2,7 +2,60 @@ body {
   
 }
 
+.menu {
+  position: absolute;
+  left: 150px;
+  top: 20px;
+  z-index: 1;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+
+.hamburger {
+  div {
+    width: 30px;
+    height: 5px;
+    background-color: rgba(38, 50, 56, 0.9);
+    margin: 6px 0;
+  }
+}
+
 .main-container{
   padding-left: 15%;
 }
     
+.hide-nav-bar {
+  .nav-container{
+    left: -198px;
+    transition: left .5s;
+  }
+
+  .main-container {
+    padding-left: 0px;
+    transition: padding-left .45s;
+  }
+  .menu {
+    left: 20px;  
+    transition: left .5s;
+    color: #263238
+  }
+}
+
+.show-nav-bar {
+  .nav-container{
+    left: 0;
+    transition: left .45s;
+  }
+
+  .main-container {
+    padding-left: 15%;
+    transition: padding-left .5s;
+  }
+  .menu {
+    left: 150px;
+    transition: left .45s; 
+    color: white;
+  }
+}

@@ -1,0 +1,71 @@
+.projects-container {
+  background: #EDEFED;
+  height: 100vh;  
+  padding: 0 15px;
+
+  .projects-cards {
+    padding-top: 30px;
+  }
+
+  .card {
+    width: 21%;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+
+    &:nth-child(even){
+      -o-transform:rotate(4deg);
+      -webkit-transform:rotate(4deg);
+      -moz-transform:rotate(4deg);
+      position:relative;
+      top:5px;
+    }
+    
+    &:nth-child(3n){
+      -o-transform:rotate(-3deg);
+      -webkit-transform:rotate(-3deg);
+      -moz-transform:rotate(-3deg);
+      position:relative;
+      top:-5px;
+    }
+    &:nth-child(5n){
+      -o-transform:rotate(5deg);
+      -webkit-transform:rotate(5deg);
+      -moz-transform:rotate(5deg);
+      position:relative;
+      top:-10px;
+    }
+
+    >div {
+      text-decoration:none;
+      color:#000;
+      background:#ffc;
+      display:block;
+      padding:1em;
+      /* Firefox */
+      -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+      /* Safari+Chrome */
+      -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+      /* Opera */
+      box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+      -webkit-transform:rotate(-6deg);
+      -o-transform:rotate(-6deg);
+      -moz-transform:rotate(-6deg);
+    } 
+
+    .icon-pin {
+      position: absolute;
+      top: 0px;
+      z-index: 1;
+      right: 20px;
+      font-size: 18px;
+      color: #009688;
+    }
+    
+    p {
+      font-size: 14px;
+    } 
+
+  }
+}
