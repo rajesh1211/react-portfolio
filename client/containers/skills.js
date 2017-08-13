@@ -8,8 +8,14 @@ import me1 from '../images/me1.jpg'
 import darth from '../images/darth.png'
 import stormtrooper from '../images/stormtrooper.png'
 
+import * as d3 from "d3";
+import * as c3 from "c3";
+
+
 require('../styles/general.scss');
 require('../styles/skills.scss');
+require('../../node_modules/c3/c3.min.css');
+
 
 class Skills extends React.Component {
 

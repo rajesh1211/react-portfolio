@@ -9,7 +9,7 @@ class Projects extends React.Component {
     return this.props.projects.map((project, index) => {
       return (
         <li className="card" key={project.id}>
-          <span className="glyphicon glyphicon-pushpin icon-pin"></span>
+          <span className="fa fa-thumb-tack icon-pin"></span>
           <div>  
             <p> Name: {project.name} </p>
             <p> Role: {project.role} </p>

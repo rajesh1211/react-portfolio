@@ -36,6 +36,12 @@
       top:-10px;
     }
 
+    &:last-of-type {
+      >div {
+        background: red;
+      } 
+    }
+
     >div {
       text-decoration:none;
       color:#000;
@@ -61,6 +67,7 @@
       right: 20px;
       font-size: 18px;
       color: #009688;
+      transform: rotate(35deg);
     }
     
     p {

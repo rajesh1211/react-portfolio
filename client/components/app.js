@@ -26,14 +26,16 @@ class App extends React.Component {
         menuIcon: 'fa-times'
       })
   }
-
+  
   render() {
     return(
       <div className={"container-fluid " + this.state.isShowNavBar}>
-        <NavigationBar toggleNavBar={this.toggleNavBar}/>
-        <i className={"menu fa " + this.state.menuIcon} aria-hidden="true" onClick={() => this.toggleNavBar()}></i>
-        <div className="main-container">
-          {this.props.children}
+        <div className="row">
+          <NavigationBar toggleNavBar={this.toggleNavBar}/>
+          <i className={"menu fa " + this.state.menuIcon} aria-hidden="true" onClick={() => this.toggleNavBar()}></i>
+          <div className="main-container">
+            {this.props.children}
+          </div>  
         </div>  
       </div>  
     );  
