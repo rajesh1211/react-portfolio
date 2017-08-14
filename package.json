@@ -4,7 +4,7 @@
   "description": "My portfolio written with react",
   "main": "index.js",
   "scripts": {
-    "prod-server": "(killall node || true) && node server/index.js &",
+    "prod-server": "(killall node || true) && nohup node server/index.js &",
     "dev-server": "NODE_ENV=development webpack-dev-server --progress --open --inline",
     "build": "NODE_ENV=production webpack --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
