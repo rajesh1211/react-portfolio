@@ -2,4 +2,6 @@
 
 HOME="/home/ubuntu/react-portfolio"
 cd $HOME
-sudo npm run prod-server
+sudo (killall node || true) 
+sudo nohup node server/index.js &
+# sudo npm run prod-server
