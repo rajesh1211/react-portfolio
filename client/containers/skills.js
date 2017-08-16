@@ -214,4 +214,4 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps, null)(Skills);
+module.exports = connect(mapStateToProps, null)(Skills);

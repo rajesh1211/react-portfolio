@@ -1,5 +1,5 @@
 import React from 'react';
-var NavigationBar =  require('./navigationbar')
+import NavigationBar from './navigationbar'
 
 require('../styles/general.scss');
 require('../styles/app.scss');
@@ -42,4 +42,5 @@ class App extends React.Component {
   }
 }
 
-export default App;
+
+module.exports = App;

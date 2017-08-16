@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
-var App = require('./components/app')
+import App from './components/app'
 var About = require('./components/about')
 var Skills = require('./containers/skills')
 var Contact = require('./containers/contact')

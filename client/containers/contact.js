@@ -101,4 +101,5 @@ Contact.propTypes = {
   contactRequest: React.PropTypes.func.isRequired
 }
 
-export default connect(mapStateToProps, {contactRequest})(Contact);
+// export default connect(mapStateToProps, {contactRequest})(Contact);
+module.exports = connect(mapStateToProps, {contactRequest})(Contact);

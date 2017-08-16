@@ -39,4 +39,5 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps, null)(Projects);
+//export default connect(mapStateToProps, null)(Projects);
+module.exports = connect(mapStateToProps, null)(Projects);
