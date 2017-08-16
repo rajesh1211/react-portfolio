@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
-var App = require('./components/App')
-var About = require('./components/About')
-var Skills = require('./containers/Skills')
-var Contact = require('./containers/Contact')
-var Projects = require('./containers/Projects')
+var App = require('./components/app')
+var About = require('./components/about')
+var Skills = require('./containers/skills')
+var Contact = require('./containers/contact')
+var Projects = require('./containers/projects')
 
 export default (
   <Route path="/" component={App}>

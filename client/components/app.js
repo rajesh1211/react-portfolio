@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationBar from './NavigationBar'
+var NavigationBar =  require('./navigationbar')
 
 require('../styles/general.scss');
 require('../styles/app.scss');
