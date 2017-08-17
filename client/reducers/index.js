@@ -3,6 +3,7 @@ import SkillsReducer from './reducer-skills';
 import ProjectsReducer from './reducer-projects';
 import PopupReducer from './reducer-popup';
 import NavigationReducer from './reducer-navigation';
+import ContactReducer from './reducer-contact';
 
 
 
@@ -16,6 +17,7 @@ const allReducers = combineReducers({
   projects: ProjectsReducer,
   popup: PopupReducer,
   navigation: NavigationReducer,
+  contact: ContactReducer,
 });
 
 export default allReducers

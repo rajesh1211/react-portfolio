@@ -150,7 +150,7 @@ class Skills extends React.Component {
               </div>  
             </div>
           </div>
-          <div className="row">
+          <div className="row highlighted-projects">
             <a className="col-md-4 card" href="http://colab.pipecast.in/" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">

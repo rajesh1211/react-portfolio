@@ -2,3 +2,4 @@
 node_modules
 PortfolioEc2.pem
 dist
+nohup.out

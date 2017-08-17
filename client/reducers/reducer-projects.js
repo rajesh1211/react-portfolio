@@ -12,7 +12,7 @@ export default function () {
       name: 'Pipecast Stream',
       role: 'Fullstack',
       techs: "ROR, angular",
-      description: 'Colab is the collaboration platform for creative people.'
+      description: 'Pipecast Stream is a video streaming platform'
     },
     {
       id: 3,  
@@ -33,7 +33,7 @@ export default function () {
       name: 'Smart Sort',
       role: 'Backend',
       techs: "Ruby",
-      description: 'Ruby Gem'
+      description: 'Ruby gem thats gives options to select multiple sorting'
     },
     {
       id: 6,  
@@ -46,8 +46,8 @@ export default function () {
       id: 7,  
       name: 'This Website',
       role: 'FrontEnd',
-      techs: "React, Bootstrap",
-      description: 'Colab is the collaboration platform for creative people.'
+      techs: "React Redux, Bootstrap",
+      description: 'Dashboard style portfolio.'
     },
     {
       id: 8,  

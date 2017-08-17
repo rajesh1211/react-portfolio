@@ -5,3 +5,10 @@ export const contactRequest = (user) => {
     payload: user
   }
 };
+
+export const closeContactRequest = (user) => {
+  return {
+    type: 'CLOSE_CONTACT',
+    payload: user
+  }
+};
