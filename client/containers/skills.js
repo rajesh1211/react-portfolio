@@ -132,12 +132,14 @@ class Skills extends React.Component {
   componentDidMount() {
     this.generatePieChart();
     this.generateBarChart();
+    
+
   }
 
   render() {
     return(
       <div className="skills-container">
-        <div className="skills-inner-container">
+        <div className="skills-inner-container inner-container">
           <div className="row intro">
             <div className="col-md-12 card">
               <div className="card-inner">
@@ -209,7 +211,8 @@ class Skills extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    skills: state.skills
+    skills: state.skills,
+    navigation: state.navigation
   };
 }
 

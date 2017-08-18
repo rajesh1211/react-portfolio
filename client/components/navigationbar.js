@@ -12,6 +12,7 @@ class NavigationBar extends React.Component {
   }
 
   navigate(e) {
+    this.props.navLinkClicked()
     browserHistory.push(e.target.getAttribute("data"))
   }
 

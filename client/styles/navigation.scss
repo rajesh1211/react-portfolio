@@ -1,29 +1,47 @@
+@import "./general";
+
 .nav-container {
   background: #263238;
-  height: 100vh;
+  
   width: 15%;
   position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
 }
 
 .sidenav {
   
-
   .profile-container{
     margin: 15px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.23);
     padding-bottom: 15px;
 
+    @include respond-to(sm) {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+    }
+
     .profile-pic-container {
       width: 35%;
       margin-bottom: 10px;
+
+      @include respond-to(sm) {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .profile-pic {
       width: 60px;
       height: 60px;
       border-radius: 50%;
+
+      @include respond-to(sm) {
+        width: 100px;
+        height: 100px;
+      }
     }
 
     .profile-name {
@@ -47,9 +65,18 @@
       display: block;
       text-decoration: none;
 
+      @include respond-to(sm) {
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+      }
+
       &:active, &:hover{
         >.nav-icon {
           color: white;    
+          @include respond-to(sm) {
+            font-size: 24px;
+          }
         }
        color: white; 
        background: rgb(32, 49, 68)

@@ -5,6 +5,10 @@ require('../styles/projects.scss');
 
 class Projects extends React.Component {
 
+  componentDidMount() {
+    console.log("change page style");
+  }
+
   renderList() {
     return this.props.projects.map((project, index) => {
       if (index == this.props.projects.length - 1) {
@@ -14,7 +18,6 @@ class Projects extends React.Component {
             <div>  
               <p> Checkout my <a href="https://github.com/rajesh1211">Github</a> profile or </p>
               <p> connect with me to know about my other projects. </p>
-              
             </div>
           </li>
         )  

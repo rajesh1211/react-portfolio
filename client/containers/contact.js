@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { contactRequest, closeContactRequest } from '../actions/contactActions'
 
-require('../styles/about.scss');
+require('../styles/contact.scss');
 
 
 class Contact extends React.Component {
@@ -20,6 +20,11 @@ class Contact extends React.Component {
     this.onSubmit = this.onSubmit.bind(this)
     this.closePopup = this.closePopup.bind(this)
   }
+
+  componentDidMount() {
+    console.log("change page style");  
+  }
+  
 
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value })

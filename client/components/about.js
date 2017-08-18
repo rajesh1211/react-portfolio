@@ -5,14 +5,14 @@ import darth from '../images/darth.png'
 import console from '../images/console.png'
 import stark from '../images/stark.png'
 
-require('../styles/contact.scss');
+require('../styles/about.scss');
 
 class About extends React.Component {
   render() {
     return(
       <div className="about-container">
         <div className="row"> 
-          <div className="col-md-12 about-inner-container">
+          <div className="col-md-12 about-inner-container inner-container">
             
             <div className="intro">
               <p className="typewriter salutation"> Hi!!, I am Rajesh.</p>
