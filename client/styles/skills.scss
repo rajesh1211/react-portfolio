@@ -1,3 +1,5 @@
+@import './general';
+
 .skills-container {
   background: #EDEFED;
   height: 100vh;  
@@ -9,6 +11,11 @@
       .profile-image-container {
         display: inline-block;
         width: 120px; 
+        @include respond-to(sm) {
+          width: 100%;
+          text-align: center;
+        }  
+
         .profile-image {
           width: 100px;
           height: 100px;
@@ -39,6 +46,10 @@
 
     .highlights-card {
       height: 100px;
+      @include respond-to(sm) {
+        width: 92%;
+        margin: auto;
+      }
     }
 
     .card-numbers, .card-description {
@@ -79,6 +90,6 @@
 }  
 
 #chart {
-  overflow: auto;  
+  overflow: auto; 
 }
     

@@ -1,3 +1,5 @@
+@import "./general";
+
 .projects-container {
   background: #EDEFED;
   height: 100vh;  
@@ -12,6 +14,11 @@
     display: inline-block;
     margin: 20px;
     position: relative;
+
+    @include respond-to(sm) {
+      width: 80%;    
+    }
+
 
     &:nth-child(even){
       -o-transform:rotate(4deg);

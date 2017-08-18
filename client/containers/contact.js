@@ -122,7 +122,7 @@ class Contact extends React.Component {
     return(
       <div className="contact-container">
         <div className="row">
-          <div className="col-md-6 col-md-offset-6 contact-inner">
+          <div className="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-2 contact-inner">
             {this.renderIntro()} 
             {this.renderForm()}
           </div>

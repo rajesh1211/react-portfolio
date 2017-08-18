@@ -55,12 +55,23 @@ class Skills extends React.Component {
     var skills = this.props.skills;
     var levels = skills.map(function(item) {return item.level})
     levels.unshift("Level");
+    if (window.outerWidth < 768) {
+      var size = {
+            height: 300,
+            width: 260
+          }
+      var rotated = true;    
+    }else{
+      var size = {
+            height: 320,
+            width: 600
+          }
+      var rotated = false;      
+    }
+
     var chart = c3.generate({
         bindto: '#chart',
-        size: {
-          height: 320,
-          width: 600
-        },
+        size: size,
         data: {
           columns: [],
           type: 'bar',
@@ -79,7 +90,7 @@ class Skills extends React.Component {
           }
         },
         axis : {
-            // rotated: true,
+            rotated: rotated,
             x: {
                 type: 'category',
                 categories: skills.map(function(item) {return item.name})
@@ -91,23 +102,25 @@ class Skills extends React.Component {
                   count: 5,
                   format: function (d) { 
                     var yLabel = ""
-                    switch(true) {
-                      case (d<=2):
-                        yLabel = "Uh? Next question?";
-                        break;
-                      case (d>2 && d<=4):
-                        yLabel = "Basic, you can't always win...";
-                        break;
-                      case (d>4 && d<=6):
-                        yLabel = "Medium, I'm trying to improve.";
-                        break;
-                      case (d>6 && d<=8):
-                        yLabel = "High, I'm pretty good.";
-                        break;
-                      case (d>8):
-                        yLabel = "I'm the master of the universe.";
-                        break;        
-                    }
+                    if (window.outerWidth > 768) {
+                      switch(true) {
+                        case (d<=2):
+                          yLabel = "Uh? Next question?";
+                          break;
+                        case (d>2 && d<=4):
+                          yLabel = "Basic, you can't always win...";
+                          break;
+                        case (d>4 && d<=6):
+                          yLabel = "Medium, I'm trying to improve.";
+                          break;
+                        case (d>6 && d<=8):
+                          yLabel = "High, I'm pretty good.";
+                          break;
+                        case (d>8):
+                          yLabel = "I'm the master of the universe.";
+                          break;        
+                      }
+                    }  
                     return yLabel;
                   }
               }
