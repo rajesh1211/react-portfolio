@@ -81,6 +81,9 @@ if (process.env.NODE_ENV === 'production') {
   // }])         
 
   module.exports.plugins = (module.exports.plugins || []).concat([
+    new CopyWebpackPlugin([
+      { from: 'client/images/favicon.ico', to: '' }
+    ]),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production')
