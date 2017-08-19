@@ -2,7 +2,7 @@
 
 .menu {
   position: absolute;
-  left: 150px;
+  left: 13%;
   top: 20px;
   z-index: 4;
   font-size: 20px;
@@ -30,8 +30,12 @@
     
 .hide-nav-bar {
   .nav-container{
-    left: -198px;
+    left: -15%;
     transition: left .5s;
+    @include respond-to(sm) {
+      left: -50%;
+    }  
+
   }
 
   .main-container {
@@ -62,7 +66,7 @@
     transition: padding-left .5s;
   }
   .menu {
-    left: 150px;
+    left: 13%;
     transition: left .45s; 
     color: white;
 

@@ -48,7 +48,7 @@
 
       @include respond-to(sm) { 
         left: 35%;
-        top: 450px;
+        top: 420px;
         -ms-transform: initial;
         -webkit-transform: initial;
         transform: initial;
@@ -104,9 +104,9 @@
         margin-bottom: 100px;      
         @include respond-to(sm) {
           font-size: 16px;
+          margin-bottom: 70px;
         }
       }
-
       
     }
 
