@@ -69,7 +69,7 @@
 
     .img-2{
       left: 100px;
-      top: 500px;
+      top: 470px;
       -ms-transform: rotate(7deg); /* IE 9 */
       -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
       transform: rotate(-20deg);
@@ -80,20 +80,21 @@
     }
 
     .intro { 
-      width: 920px;
-      position: absolute;
-      right: 0;
       margin-top: 270px;
-      text-align: right;
-      padding-right: 120px;
+      padding-right: 70px;
       font-family: monospace;
-      
+      text-align: right;
 
       @include respond-to(sm) {
         width: 100%;
         margin-top: 200px;
         text-align: center;
         padding-right: 0px;
+      }
+
+      .typewriter-div {
+        display: inline-block;
+        text-align: left;
       }
 
       p.salutation {
@@ -106,22 +107,21 @@
       p.house-name {
         font-size: 24px;
         margin-bottom: 100px;      
+        display: none;
         @include respond-to(sm) {
           font-size: 16px;
           margin-bottom: 70px;
         }
       }
-      
     }
 
     .sub-intro {
-      text-align: right;
-
       @include respond-to(sm) {
         text-align: center;      
       }
 
-      p.description {
+      p.description, p.description-end {
+        display: none;
         font-size: 16px;
         font-family: monospace;
       }
@@ -130,16 +130,21 @@
 }
 
 .typewriter {
+  display: block !important;
   color: #263238;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
+  border-right: .15em solid #263238; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .5s step-end infinite;
+}
+
+.remove-type-writer {
+  border-right: 0px;
 }
 
 /* The typing effect */
@@ -153,4 +158,5 @@
   from, to { border-color: transparent }
   50% { border-color: #263238; }
 }
+
 
