@@ -87,14 +87,19 @@
 
       @include respond-to(sm) {
         width: 100%;
-        margin-top: 200px;
+        margin-top: 0px;
         text-align: center;
         padding-right: 0px;
+        padding-top: 200px;
       }
 
       .typewriter-div {
         display: inline-block;
         text-align: left;
+
+        @include respond-to(sm) {
+          display: block;
+        }
       }
 
       p.salutation {
@@ -124,6 +129,10 @@
         display: none;
         font-size: 16px;
         font-family: monospace;
+
+        @include respond-to(sm) {
+          font-size: 9px;
+        } 
       }
     }   
   }
@@ -141,6 +150,10 @@
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .5s step-end infinite;
+
+  @include respond-to(sm) {  
+    text-align: center;  
+  }    
 }
 
 .remove-type-writer {
