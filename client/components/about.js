@@ -12,31 +12,29 @@ class About extends React.Component {
   constructor(props) {
     super(props)
     this.randomizeIcons = this.randomizeIcons.bind(this)
-
-    this.initTypewriter()
+    this.initTypewriter = this.initTypewriter.bind(this)
   }
 
   initTypewriter() {
-    setTimeout( function() {
-      var salutationClass = document.getElementsByClassName('salutation')[0]
-      salutationClass.classList.add("remove-type-writer");
-      var houseNameClass = document.getElementsByClassName('house-name')[0]
-      houseNameClass.classList.add("typewriter");
-
-      setTimeout( function() {
-        houseNameClass.classList.add("remove-type-writer");
-        var description = document.getElementsByClassName('description')[0]
-        description.classList.add("typewriter");        
-
-        setTimeout( function() {
-          description.classList.add("remove-type-writer");
-          var descriptionEnd = document.getElementsByClassName('description-end')[0]
-          descriptionEnd.classList.add("typewriter");
-        }, 3500);  
-      }, 3500);
-    }, 3500);
+    var that = this;
+    that.typeNextLine('salutation', 'house-name', function() {
+      that.typeNextLine('house-name', 'description', function() {
+        that.typeNextLine('description', 'description-end', function() {})
+      })
+    })
   }
 
+  componentDidMount() {
+    setTimeout(this.initTypewriter, 3500);
+  }
+
+  typeNextLine(removeTypeWriterClass, addTypeWriterClass, callback) {
+    var removeClass = document.getElementsByClassName(removeTypeWriterClass)[0]
+    removeClass.classList.add("remove-type-writer");
+    var addNameClass = document.getElementsByClassName(addTypeWriterClass)[0]
+    addNameClass.classList.add("typewriter");
+    setTimeout(callback, 3500);
+  }
   
   randomizeIcons(e) {
     var clickedElementPosClass = e.target.className.match(/img-pos-[0-9]/g)[0]; 
