@@ -8,8 +8,10 @@
 
 
   .about-images{
+    cursor: pointer;
     width: 180px;
     position: absolute;
+    transition: all .5s;
 
     @include respond-to(sm) {
       width: 120px;
@@ -18,7 +20,7 @@
 
   .about-inner-container{
     position: relative;
-    .img-mac{
+    .img-3{
       left: 50px;
       top:100px;
       -ms-transform: rotate(7deg); /* IE 9 */
@@ -31,7 +33,7 @@
     }
 
     
-    .img-stark {
+    .img-0 {
       left: 350px;
       top: 5px;
 
@@ -41,7 +43,7 @@
       }
     }
 
-    .img-darth{
+    .img-1{
       right: 40px;
       top:80px;
       -ms-transform: rotate(7deg); /* IE 9 */
@@ -65,7 +67,7 @@
       }
     }
 
-    .img-console{
+    .img-2{
       left: 100px;
       top: 500px;
       -ms-transform: rotate(7deg); /* IE 9 */
@@ -127,7 +129,7 @@
   }
 }
 
-.typewriter {
+.typewriter1 {
   color: #263238;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */

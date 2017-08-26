@@ -64,7 +64,7 @@ class Skills extends React.Component {
     }else{
       var size = {
             height: 320,
-            width: 600
+            width: 650
           }
       var rotated = false;      
     }
@@ -145,8 +145,6 @@ class Skills extends React.Component {
   componentDidMount() {
     this.generatePieChart();
     this.generateBarChart();
-    
-
   }
 
   render() {
@@ -206,12 +204,12 @@ class Skills extends React.Component {
           <div className="row charts">
             <div className="col-md-4 card">
               <div className="card-inner">
-                <div id="chart2">Chart div2</div>
+                <span id="chart2">Chart div2</span>
               </div>  
             </div>  
             <div className="col-md-8 card bar-chart-card">
               <div className="card-inner">
-                <div id="chart">Chart div</div>
+                <span id="chart">Chart div</span>
               </div>  
             </div>  
           </div>  
