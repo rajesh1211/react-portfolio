@@ -22,7 +22,7 @@ class Skills extends React.Component {
         bindto: '#chart2',
         data: {
             columns: [
-                
+
             ],
             type : 'donut'
         },
@@ -37,7 +37,7 @@ class Skills extends React.Component {
         chart2.load({
             columns: [
               ['Backend', 60]
-              
+
             ]
         });
     }, 500);
@@ -60,13 +60,13 @@ class Skills extends React.Component {
             height: 300,
             width: 260
           }
-      var rotated = true;    
+      var rotated = true;
     }else{
       var size = {
             height: 320,
             width: 650
           }
-      var rotated = false;      
+      var rotated = false;
     }
 
     var chart = c3.generate({
@@ -85,7 +85,7 @@ class Skills extends React.Component {
                   return '#1F77B4'
                 }
               }
-              
+
             }
           }
         },
@@ -100,7 +100,7 @@ class Skills extends React.Component {
                   min: 0,
                   max: 10,
                   count: 5,
-                  format: function (d) { 
+                  format: function (d) {
                     var yLabel = ""
                     if (window.outerWidth > 768) {
                       switch(true) {
@@ -118,9 +118,9 @@ class Skills extends React.Component {
                           break;
                         case (d>8):
                           yLabel = "I'm the master of the universe.";
-                          break;        
+                          break;
                       }
-                    }  
+                    }
                     return yLabel;
                   }
               }
@@ -131,7 +131,7 @@ class Skills extends React.Component {
           duration: 1000
         }
       });
-        
+
     var levels = skills.map(function(item) {return item.level})
     levels.unshift("Skills");
     setTimeout(function () {
@@ -160,63 +160,63 @@ class Skills extends React.Component {
                 <div className="profile-description-container">
                   <p>5 Years of experience in building consumer and enterprise applications from scratch. Well versed with the object oriented concepts and hands on experience at both backend and frontend technologies. A true go to guy for any web application problem.</p>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
           <div className="row highlighted-projects">
             <a className="col-md-4 card" href="http://colab.pipecast.in/" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
-                  <div className="number"> 2276 </div>
+                  <div className="number"> 2292 </div>
                   <div className="number-description"> Users </div>
                 </div>
                 <div className="card-description">
                   <div className="card-description-logo"> <img src={colab}/> </div>
                   <div className="card-description-title"> Pipecast.in </div>
                 </div>
-              </div>  
-            </a>  
+              </div>
+            </a>
             <a className="col-md-4 card" href="https://chrome.google.com/webstore/detail/files-deleter-for-slack/mecaeilcedkdpkfjlijlcodonpbbpaei" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
-                  <div className="number"> 60 </div>
+                  <div className="number"> 114 </div>
                   <div className="number-description"> Downloads </div>
-                </div>  
+                </div>
                 <div className="card-description">
                   <div className="card-description-logo"> <img src={sts}/> </div>
                   <div className="card-description-title"> Files Deleter For Slack </div>
                 </div>
-              </div>  
-            </a>  
+              </div>
+            </a>
             <a className="col-md-4 card" href="https://rubygems.org/gems/smart_sort" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
-                  <div className="number"> 440 </div>
+                  <div className="number"> 570 </div>
                   <div className="number-description"> Downloads </div>
                 </div>
                 <div className="card-description">
                   <div className="card-description-logo"> <img src={rubygem}/> </div>
                   <div className="card-description-title"> Smart Sort </div>
-                </div>  
-              </div>  
-            </a>  
+                </div>
+              </div>
+            </a>
           </div>
           <div className="row charts">
             <div className="col-md-4 card">
               <div className="card-inner">
                 <span id="chart2">Chart div2</span>
-              </div>  
-            </div>  
+              </div>
+            </div>
             <div className="col-md-8 card bar-chart-card">
               <div className="card-inner">
                 <span id="chart">Chart div</span>
-              </div>  
-            </div>  
-          </div>  
-          
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>  
-    );  
+      </div>
+    );
   }
 }
 
