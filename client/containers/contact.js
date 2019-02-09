@@ -22,9 +22,9 @@ class Contact extends React.Component {
   }
 
   componentDidMount() {
-    console.log("change page style");  
+    console.log("change page style");
   }
-  
+
 
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value })
@@ -47,10 +47,8 @@ class Contact extends React.Component {
         <div>
           <p className="heading">Lets get together</p>
           <p>Rajesh Raikwar</p>
-          <p>G003, V. Raj Sunshine Apartment, Bellandur </p>
-          <p>Banglore , 560103 </p>
           <p>Email: <a href="mailto:rajesh.raikwar1211@gmail.com">rajesh.raikwar1211@gmail.com</a></p>
-        </div>  
+        </div>
 
         <div className="social-links-container">
           <a className="social-link angellist" href="https://angel.co/rajesh-raikwar" target="_blank">
@@ -62,8 +60,8 @@ class Contact extends React.Component {
           <a className="social-link github" href="https://github.com/rajesh1211" target="_blank">
             <i className="icon fa fa-github-alt"></i>
           </a>
-        </div>     
-      </div>  
+        </div>
+      </div>
     )
   }
 
@@ -71,37 +69,37 @@ class Contact extends React.Component {
     return(
       <form onSubmit={this.onSubmit} className="form">
         <div className="form-group">
-          <input 
-            type="text" 
-            name="name" 
+          <input
+            type="text"
+            name="name"
             placeholder="Your name"
-            className="form-control" 
+            className="form-control"
             id="name"
             onChange={this.onChange}/>
         </div>
         <div className="form-group">
-          <input 
-            type="text" 
-            name="email" 
-            className="form-control" 
+          <input
+            type="text"
+            name="email"
+            className="form-control"
             id="email"
             placeholder="Your email address"
             onChange={this.onChange}/>
         </div>
         <div className="form-group">
-          <textarea 
-            className="form-control" 
-            rows="5" 
+          <textarea
+            className="form-control"
+            rows="5"
             id="message"
             name="message"
             placeholder="Your Message"
-            ></textarea>  
+            ></textarea>
         </div>
         <div className="form-group">
           <button type="submit" className="btn btn-default pull-right">Submit</button>
-        </div>  
+        </div>
       </form>
-    )  
+    )
   }
 
   renderPopup() {
@@ -110,7 +108,7 @@ class Contact extends React.Component {
         <div className="popup-heading-container">
           <p className="popup-heading"> Thanks {this.props.contact.isShow} </p>
         </div>
-        <div className="popup-content-container">    
+        <div className="popup-content-container">
           <p className="popup-heading"> {this.props.contact.popupMessage} </p>
           <button className="btn btn-primary btn-close" onClick={this.closePopup}>Close</button>
         </div>
@@ -123,14 +121,14 @@ class Contact extends React.Component {
       <div className="contact-container">
         <div className="row">
           <div className="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-2 contact-inner">
-            {this.renderIntro()} 
+            {this.renderIntro()}
             {this.renderForm()}
           </div>
         </div>
         {this.renderPopup()}
         <div className={"overlay " + (this.props.contact.isShow? 'show': 'hide')}/>
-      </div>  
-    );  
+      </div>
+    );
   }
 }
 
