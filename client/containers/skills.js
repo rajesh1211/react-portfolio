@@ -167,7 +167,7 @@ class Skills extends React.Component {
             <a className="col-md-4 card" href="http://colab.pipecast.in/" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
-                  <div className="number"> 2292 </div>
+                  <div className="number"> 2306 </div>
                   <div className="number-description"> Users </div>
                 </div>
                 <div className="card-description">
@@ -179,7 +179,7 @@ class Skills extends React.Component {
             <a className="col-md-4 card" href="https://chrome.google.com/webstore/detail/files-deleter-for-slack/mecaeilcedkdpkfjlijlcodonpbbpaei" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
-                  <div className="number"> 114 </div>
+                  <div className="number"> 230 </div>
                   <div className="number-description"> Downloads </div>
                 </div>
                 <div className="card-description">
@@ -191,7 +191,7 @@ class Skills extends React.Component {
             <a className="col-md-4 card" href="https://rubygems.org/gems/smart_sort" target="_blank">
               <div className="card-inner highlights-card">
                 <div className="card-numbers">
-                  <div className="number"> 570 </div>
+                  <div className="number"> 1,086 </div>
                   <div className="number-description"> Downloads </div>
                 </div>
                 <div className="card-description">
